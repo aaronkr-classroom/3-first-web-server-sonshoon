@@ -11,7 +11,14 @@
  * 필요가 없어진다.
  */
 
-// 먼저 터미널에서 npm install cities 명령해야 한다.
-const cities; // US addresses only (미국 주소만 가능)
+// 먼저 터미널에서 npm install cities 명령해야 한다.````
+const cities = require('cities'); // US addresses only (미국 주소만 가능)
 
-var myCity;
+var myCity = cities.zip_lookup("97210");
+console.log(myCity);
+//82901=Rock Springs
+//90210=Beverly Hills
+//33162=Miami
+//60606=Chicago
+//10007=New York
+//97210=Portland
